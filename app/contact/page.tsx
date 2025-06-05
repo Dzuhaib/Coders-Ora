@@ -51,10 +51,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Email Us</h3>
                       <a
-                        href="mailto:info@codersora.com"
+                        href="mailto:codersaura467@gmail.com"
                         className="text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        info@codersora.com
+                        codersaura467@gmail.com
                       </a>
                     </div>
                   </div>
@@ -69,7 +69,7 @@ export default function ContactPage() {
                         href="tel:+1234567890"
                         className="text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        +1 (234) 567-890
+                        +92 (306) 3213-951
                       </a>
                     </div>
                   </div>
