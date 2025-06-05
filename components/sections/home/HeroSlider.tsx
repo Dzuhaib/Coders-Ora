@@ -45,7 +45,7 @@ export default function HeroSlider() {
   }
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-x-hidden overflow-hidden">
       <Swiper
         modules={[Navigation, Autoplay, EffectFade]}
         navigation={{
