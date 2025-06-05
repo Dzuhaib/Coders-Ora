@@ -134,7 +134,7 @@ export default function Footer() {
                   href="mailto:info@codersora.com"
                   className="text-muted-foreground hover:text-foreground transition-colors no-underline"
                 >
-                  info@codersora.com
+                  codersaura467@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -143,7 +143,7 @@ export default function Footer() {
                   href="tel:+1234567890"
                   className="text-muted-foreground hover:text-foreground transition-colors no-underline"
                 >
-                  +1 (234) 567-890
+                  +92 (306) 3213-951
                 </a>
               </li>
             </ul>
