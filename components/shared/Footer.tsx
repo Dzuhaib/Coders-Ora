@@ -131,7 +131,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-foreground" />
                 <a
-                  href="mailto:info@codersora.com"
+                  href="mailto:codersaura467@gmail.com"
                   className="text-muted-foreground hover:text-foreground transition-colors no-underline"
                 >
                   codersaura467@gmail.com
