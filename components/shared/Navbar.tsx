@@ -122,7 +122,7 @@ export default function Navbar() {
                 ))}
                 <li className="pt-2">
                   
-                    <Button className="bg-foreground text-background hover:bg-foreground/90 w-full">
+                    <Button className="bg-foreground text-white hover:bg-foreground/90 w-full">
                     <Link href="https://calendly.com/myselfzuhaib">
                       Book a Meeting
                     </Link>
