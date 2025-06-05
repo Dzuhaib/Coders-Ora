@@ -21,9 +21,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Coders Ora | Digital Solutions",
-  description: "Turn your idea into a powerful digital experience with Coders Ora.",
-    generator: 'v0.dev'
+  title: "Coders Aura | Creative Web & AI Solutions for the Modern Digital World",
+  description: "Coders Aura is a future-focused web and AI development agency delivering stunning websites, intelligent applications, and seamless digital experiences for businesses ready to lead. Innovation, speed, and design — all in one aura.
+",
 }
 
 export default function RootLayout({
