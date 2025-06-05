@@ -39,7 +39,7 @@ export default function ContactPreview() {
                       href="mailto:info@codersora.com"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      info@codersora.com
+                      codersaura467@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center gap-3">
@@ -48,7 +48,7 @@ export default function ContactPreview() {
                       href="tel:+923390349804"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      +92 (339) 0349-804
+                      +92 (306) 3213-951
                     </a>
                   </li>
                 </ul>
