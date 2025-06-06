@@ -154,7 +154,7 @@ export default function PortfolioPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 transition-opacity group-hover:opacity-90" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-xl font-bold mb-1">{project.title}</h3>
+                  <h3 className="text-xl text-white font-bold mb-1">{project.title}</h3>
                   <p className="text-white/80 mb-2">{project.category}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, index) => (

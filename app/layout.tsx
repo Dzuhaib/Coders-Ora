@@ -23,7 +23,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Coders Ora | Digital Solutions",
   description: "Turn your idea into a powerful digital experience with Coders Ora.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
