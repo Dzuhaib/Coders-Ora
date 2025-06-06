@@ -35,22 +35,28 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all overflow-x-hidden overflow-hidden duration-300 ${
         scrolled ? "bg-background/90 backdrop-blur-md shadow-md" : "bg-black/90 backdrop-blur-none shadow-none"
       }`}
     >
       <div className="container-custom py-4">
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold font-heading no-underline">
-            {/* <Image
-              src="/public/logo.png"
+            {scrolled ? 
+            <Image
+              src="/logo-b.png"
               alt="Coders Ora Logo"
               width={40}
               height={40}
-              style={{ objectFit: "cover" }} // Ensures the image covers the area without stretching
-              unoptimized={true} // Use this if you're using a local image and want to avoid Next.js optimization
-            /> */}
-            <span className={scrolled ? "text-foreground" : "text-white"}>Coders Ora</span>
+            /> : 
+            <Image
+              src="/logo.png"
+              alt="Coders Ora Logo"
+              width={40}
+              height={40}
+            /> 
+            }
+            {/* <span className={scrolled ? "text-foreground" : "text-white"}>Coders Ora</span> */}
           </Link>
 
           {/* Desktop Navigation */}
