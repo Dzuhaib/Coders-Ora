@@ -35,22 +35,28 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 overflow-x-hidden overflow-hidden z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all overflow-x-hidden overflow-hidden duration-300 ${
         scrolled ? "bg-background/90 backdrop-blur-md shadow-md" : "bg-black/90 backdrop-blur-none shadow-none"
       }`}
     >
       <div className="container-custom py-4">
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold font-heading no-underline">
-            {/* <Image
-              src="/public/logo.png"
+            {scrolled ? 
+            <Image
+              src="/logo-b.png"
               alt="Coders Ora Logo"
-              width={40}
-              height={40}
-              style={{ objectFit: "cover" }} // Ensures the image covers the area without stretching
-              unoptimized={true} // Use this if you're using a local image and want to avoid Next.js optimization
-            /> */}
-            <span className={scrolled ? "text-foreground" : "text-white"}>Coders Ora</span>
+              width={70}
+              height={70}
+            /> : 
+            <Image
+              src="/logo.png"
+              alt="Coders Ora Logo"
+              width={60}
+              height={60}
+            /> 
+            }
+            {/* <span className={scrolled ? "text-foreground" : "text-white"}>Coders Ora</span> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -74,14 +80,24 @@ export default function Navbar() {
                 <ModeToggle />
               </div>
               <Button
-                className={
-                  scrolled
-                    ? "bg-foreground text-background hover:bg-foreground/90"
-                    : "bg-white text-black hover:bg-white/90"
-                }
-              >
-                Book a Meeting
-              </Button>
+  className={`transition-colors duration-300 ${
+    scrolled
+      ? "bg-foreground text-background hover:text-background hover:bg-foreground/90"
+      : "bg-background text-foreground hover:text-foreground hover:bg-background/90"
+  }`}
+  asChild
+>
+  <Link
+    href="https://calendly.com/myselfzuhaib"
+    className="no-underline px-4 py-2 inline-block"
+  >
+    Book a Meeting
+  </Link>
+</Button>
+
+
+
+
             </div>
           </div>
 
@@ -122,11 +138,18 @@ export default function Navbar() {
                 ))}
                 <li className="pt-2">
                   
-                    <Button className="bg-foreground text-white hover:bg-foreground/90 w-full">
-                    <Link href="https://calendly.com/myselfzuhaib">
-                      Book a Meeting
-                    </Link>
-                    </Button>
+                    <Button
+  className="bg-foreground text-background hover:bg-foreground/90 w-full transition-colors duration-300"
+  asChild
+>
+  <Link
+    href="https://calendly.com/myselfzuhaib"
+    className="no-underline px-4 py-2 inline-block"
+  >
+    Book a Meeting
+  </Link>
+</Button>
+
             
                 </li>
               </ul>

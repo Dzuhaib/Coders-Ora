@@ -101,7 +101,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Services Header */}
       <section className="py-16 bg-primary text-white">
         <div className="container-custom">

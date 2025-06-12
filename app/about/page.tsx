@@ -59,11 +59,11 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="section-padding bg-accent/30">
+      <section className="section-padding bg-black">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Coders Ora?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl text-background md:text-4xl font-bold mb-4">Why Coders Ora?</h2>
+            <p className="text-white/80 max-w-2xl mx-auto">
               We combine technical expertise with creative thinking to deliver exceptional digital solutions.
             </p>
           </div>
@@ -136,13 +136,13 @@ export default function AboutPage() {
 
         <div className="container-custom relative z-10">
           <motion.div
-            className="max-w-3xl mx-auto text-center text-white"
+            className="max-w-3xl mx-auto text-center text-background"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Vision</h2>
+            <h2 className="text-3xl md:text-4xl text-background font-bold mb-6">Our Vision</h2>
             <p className="text-2xl md:text-3xl font-light mb-8">
               "To empower businesses through innovative digital solutions that drive growth, enhance user experiences,
               and create lasting impact in an ever-evolving digital landscape."

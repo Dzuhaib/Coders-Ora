@@ -91,7 +91,7 @@ export default function PortfolioPage() {
     activeCategory === "All" ? projects : projects.filter((project) => project.category === activeCategory)
 
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Portfolio Header */}
       <section className="py-16 bg-primary text-white">
         <div className="container-custom">

@@ -17,7 +17,7 @@ import {
 
 export default function ContactPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Contact Header */}
       <section className="py-16 bg-primary text-white">
         <div className="container-custom">
