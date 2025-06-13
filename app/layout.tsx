@@ -21,13 +21,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
   title: "Coders Aura | Creative Web & AI Solutions for the Modern Digital World",
   description: `Coders Aura is a future-focused web and AI development agency delivering stunning websites, intelligent applications, and seamless digital experiences for businesses ready to lead. Innovation, speed, and design — all in one aura.`,
-=======
-  title: "Coders Ora | Digital Solutions",
-  description: "Turn your idea into a powerful digital experience with Coders Ora.",
->>>>>>> 48199491d7c0e3b46f6847ea6bb60203537d7487
 }
 
 

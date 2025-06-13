@@ -45,11 +45,8 @@ export default function HeroSlider() {
   }
 
   return (
-<<<<<<< HEAD
     <div className="relative h-screen w-full overflow-x-hidden overflow-hidden max-w-full">
-=======
-    <div className="relative h-screen w-full overflow-x-hidden overflow-hidden">
->>>>>>> 48199491d7c0e3b46f6847ea6bb60203537d7487
+      <div className="relative h-screen w-full overflow-x-hidden overflow-hidden">
       <Swiper
         modules={[Navigation, Autoplay, EffectFade]}
         navigation={{
@@ -113,6 +110,7 @@ export default function HeroSlider() {
           <ChevronRight size={24} />
         </button>
       </div>
+    </div>
     </div>
   )
 }
