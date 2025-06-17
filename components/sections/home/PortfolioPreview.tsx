@@ -60,7 +60,7 @@ export default function PortfolioPreview() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 transition-opacity group-hover:opacity-90" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-1">{project.title}</h3>
+                <h3 className="text-xl text-primary-foreground font-bold mb-1">{project.title}</h3>
                 <p className="text-white/80 mb-4">{project.subtitle}</p>
                 <Link
                   href={project.link}
