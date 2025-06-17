@@ -175,7 +175,7 @@ export default function ServicesPage() {
               Let's turn your vision into reality with our expertise and passion for creating exceptional digital
               experiences.
             </p>
-            <Button asChild size="lg" className="text-lg px-8">
+            <Button asChild size="lg" className="text-lg px-8 hover:text-primary-foreground">
               <Link href="https://calendly.com/myselfzuhaib">Book a Free Consultation</Link>
             </Button>
           </motion.div>
