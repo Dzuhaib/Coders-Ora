@@ -106,7 +106,7 @@ export default function ContactPreview() {
 
               {/* Hidden FormSubmit config fields */}
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="http://localhost:3000/thank-you" />
+              <input type="hidden" name="_next" value="https://coders-ora.vercel.app/thank-you" />
 
               <Button type="submit" size="lg" className="w-full">
                 Make It Happen
