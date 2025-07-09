@@ -5,6 +5,7 @@ import "./globals.css"
 import Navbar from "@/components/shared/Navbar"
 import Footer from "@/components/shared/Footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import VapiWidget from "@/components/VapiWidget"
 
 // Define fonts
 const inter = Inter({
@@ -38,6 +39,7 @@ export default function RootLayout({
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <VapiWidget />
         </ThemeProvider>
       </body>
     </html>
