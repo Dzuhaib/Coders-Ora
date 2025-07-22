@@ -19,7 +19,7 @@ const VapiWidget = () => {
       button-base-color="#000000"
       button-accent-color="#ffffff"
       radius="large"
-      size="full"
+      size="small"
       position="bottom-right"
       main-label="TALK WITH VANILLA"
       start-button-text="Start"
