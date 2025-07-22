@@ -22,11 +22,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
+      setScrolled(window.scrollY > 10)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -35,28 +31,20 @@ export default function Navbar() {
 
   return (
     <header
-      className={fixed top-0 left-0 right-0 z-50 transition-all overflow-x-hidden overflow-hidden duration-300 ${
-        scrolled ? "bg-background/90 backdrop-blur-md shadow-md" : "bg-black/90 backdrop-blur-none shadow-none"
-      }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all overflow-x-hidden duration-300 ${
+        scrolled
+          ? "bg-background/90 backdrop-blur-md shadow-md"
+          : "bg-black/90 backdrop-blur-none shadow-none"
+      }`}
     >
       <div className="container-custom py-4">
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold font-heading no-underline">
-            {scrolled ? 
-            <Image
-              src="/logo-b.png"
-              alt="Coders Ora Logo"
-              width={70}
-              height={70}
-            /> : 
-            <Image
-              src="/logo.png"
-              alt="Coders Ora Logo"
-              width={60}
-              height={60}
-            /> 
-            }
-            {/* <span className={scrolled ? "text-foreground" : "text-white"}>Coders Ora</span> */}
+            {scrolled ? (
+              <Image src="/logo-b.png" alt="Coders Ora Logo" width={70} height={70} />
+            ) : (
+              <Image src="/logo.png" alt="Coders Ora Logo" width={60} height={60} />
+            )}
           </Link>
 
           {/* Desktop Navigation */}
@@ -66,9 +54,11 @@ export default function Navbar() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className={font-medium transition-colors no-underline ${
-                      scrolled ? "text-foreground hover:text-foreground/70" : "text-white hover:text-white/70"
-                    }}
+                    className={`font-medium transition-colors no-underline ${
+                      scrolled
+                        ? "text-foreground hover:text-foreground/70"
+                        : "text-white hover:text-white/70"
+                    }`}
                   >
                     {link.name}
                   </Link>
@@ -80,21 +70,20 @@ export default function Navbar() {
                 <ModeToggle />
               </div>
               <Button
-  className={transition-colors duration-300 ${
-    scrolled
-      ? "bg-foreground text-background hover:text-background hover:bg-foreground/90"
-      : "bg-background text-foreground hover:text-foreground hover:bg-background/90"
-  }}
-  asChild
->
-  <Link
-    href="https://calendly.com/myselfzuhaib"
-    className="no-underline px-4 py-2 inline-block"
-  >
-    Book a Meeting
-  </Link>
-</Button>
-
+                className={`transition-colors duration-300 ${
+                  scrolled
+                    ? "bg-foreground text-background hover:bg-foreground/90"
+                    : "bg-background text-foreground hover:bg-background/90"
+                }`}
+                asChild
+              >
+                <Link
+                  href="https://calendly.com/myselfzuhaib"
+                  className="no-underline px-4 py-2 inline-block"
+                >
+                  Book a Meeting
+                </Link>
+              </Button>
             </div>
           </div>
 
@@ -103,7 +92,10 @@ export default function Navbar() {
             <div className={scrolled ? "" : "text-white"}>
               <ModeToggle />
             </div>
-            <button onClick={() => setIsOpen(!isOpen)} className={p-2 ${scrolled ? "text-foreground" : "text-white"}}>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className={`p-2 ${scrolled ? "text-foreground" : "text-white"}`}
+            >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -134,20 +126,17 @@ export default function Navbar() {
                   </li>
                 ))}
                 <li className="pt-2">
-                  
-                    <Button
-  className="bg-foreground text-background hover:bg-foreground/90 w-full transition-colors duration-300"
-  asChild
->
-  <Link
-    href="https://calendly.com/myselfzuhaib"
-    className="no-underline px-4 py-2 inline-block"
-  >
-    Book a Meeting
-  </Link>
-</Button>
-
-            
+                  <Button
+                    className="bg-foreground text-background hover:bg-foreground/90 w-full transition-colors duration-300"
+                    asChild
+                  >
+                    <Link
+                      href="https://calendly.com/myselfzuhaib"
+                      className="no-underline px-4 py-2 inline-block"
+                    >
+                      Book a Meeting
+                    </Link>
+                  </Button>
                 </li>
               </ul>
             </div>
@@ -156,4 +145,4 @@ export default function Navbar() {
       </AnimatePresence>
     </header>
   )
-} 
+}
