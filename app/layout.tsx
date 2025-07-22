@@ -39,7 +39,6 @@ export default function RootLayout({
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
-          <VapiWidget />
         </ThemeProvider>
       </body>
     </html>
