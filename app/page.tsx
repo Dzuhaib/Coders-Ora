@@ -3,7 +3,6 @@ import ServicesSection from "@/components/sections/home/ServicesSection"
 import AboutPreview from "@/components/sections/home/AboutPreview"
 import PortfolioPreview from "@/components/sections/home/PortfolioPreview"
 import ContactPreview from "@/components/sections/home/ContactPreview"
-import VapiWidget from "@/components/VapiWidget"
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <AboutPreview />
       <PortfolioPreview />
       <ContactPreview />
-      <VapiWidget />
     </>
   )
 }
