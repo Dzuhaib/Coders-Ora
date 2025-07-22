@@ -74,7 +74,7 @@ export default function PortfolioPreview() {
         </div>
 
         <div className="text-center">
-          <Button asChild size="lg">
+          <Button asChild size="lg bg-black hover:bg-white color-white hover:color-black">
             <Link href="/portfolio">View All Projects</Link>
           </Button>
         </div>
